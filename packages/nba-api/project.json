@@ -7,14 +7,14 @@
     "targets": {
         "build": {
             "executor": "@nrwl/js:tsc",
-            "outputs": ["{options.outputPath}"],
             "options": {
                 "assets": ["packages/nba-api/*.md"],
                 "main": "packages/nba-api/src/index.ts",
                 "outputPath": "dist/packages/nba-api",
                 "packageJson": "packages/nba-api/package.json",
                 "tsConfig": "packages/nba-api/tsconfig.lib.json"
-            }
+            },
+            "outputs": ["{options.outputPath}"]
         },
         "lint": {
             "executor": "@nrwl/linter:eslint",

@@ -8,14 +8,16 @@
         "tslib": "2.3.0"
     },
     "devDependencies": {
+        "@nrwl/esbuild": "15.5.1",
         "@nrwl/jest": "15.5.1",
         "@nrwl/js": "15.5.1",
         "@nrwl/node": "15.5.1",
         "@nrwl/workspace": "15.5.1",
         "@types/jest": "28.1.1",
-        "@types/node": "16.11.7",
+        "@types/node": "18.7.1",
         "@typescript-eslint/eslint-plugin": "5.45.0",
         "@typescript-eslint/parser": "5.45.0",
+        "esbuild": "0.15.7",
         "eslint": "8.29.0",
         "eslint-plugin-import": "2.26.0",
         "eslint-plugin-jsx-a11y": "6.6.1",

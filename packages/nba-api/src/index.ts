@@ -1,1 +1,1 @@
-export * from './lib/test';
+export * from './lib/box-score-summary-v2';
