@@ -1,0 +1,35 @@
+{
+    "name": "nba-api",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "projectType": "library",
+    "sourceRoot": "packages/nba-api/src",
+    "tags": [],
+    "targets": {
+        "build": {
+            "executor": "@nrwl/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "assets": ["packages/nba-api/*.md"],
+                "main": "packages/nba-api/src/index.ts",
+                "outputPath": "dist/packages/nba-api",
+                "packageJson": "packages/nba-api/package.json",
+                "tsConfig": "packages/nba-api/tsconfig.lib.json"
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+                "lintFilePatterns": ["packages/nba-api/**/*.ts"]
+            },
+            "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "options": {
+                "jestConfig": "packages/nba-api/jest.config.ts",
+                "passWithNoTests": true
+            },
+            "outputs": ["{workspaceRoot}/coverage/{projectRoot}"]
+        }
+    }
+}
